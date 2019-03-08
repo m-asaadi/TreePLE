@@ -1,0 +1,94 @@
+namespace ca.mcgill.ecse321.TreePLE.model;
+
+class TreeManager{
+1 -> * Tree trees;
+1 -> * Person person;
+1 -> * Report reports;
+1 -> * Municipality municipality;
+1 -> * Forecast forecast;
+
+
+ 1 -> * Status statuses;
+}
+
+class Tree{
+autounique treeID;
+  enum TreeSpecies{Willow,RedMaple,LobollyPine,Sweetgum,DouglasFir,QuackingAspen,SugarMaple,Balsamfir,FloweringDogwood,LodgepolePine,WhiteOak}
+  lazy TreeSpecies treeSpecies;
+//enum TreeSpecies {Willow}
+//lazy TreeSpecies treeSpecies;
+  
+double height;
+double diameter;
+double longitude;
+double latitude;
+  
+enum LandType{residential,institutional, park, municipal}
+  
+lazy LandType landType;
+1 -- * Status statuses;
+ *--1 Municipality municipality;
+  0..1  -> 0..1 Status currentStatus;
+}
+
+class Municipality{
+  enum MunicipalityName {Montreal,Laval,Anjou,AhuntsicCartierville,LeSudOuest,LIlleBizadSaintGenevieve,MercierHochelagaMaisonneuve,MontrealNord,PierrefondsRoxboro,RiviereDesPrairiesPointeAuxTrembles,Rosemont,VilleraySaintMichel,CoteDesNeiges, Lachine, LaSalle, LePlateau, Outremont, Verdun, VilleMarie}
+  lazy MunicipalityName municipalityName;
+}
+
+class Status{
+ enum TreeState {Planted,   Diseased, ToBeCut, Cut}
+ lazy TreeState treeState;
+Date date;
+
+ 
+}
+
+class Person {
+name;
+ defaulted int treesPlanted=0;
+  defaulted int treesCut=0;
+  enum Level{LocalCitizen, RemarkableCitizen, ExceptionalCitizen, PerfectCitizen}
+  lazy defaulted Level level= Level.LocalCitizen;
+  1--* Status status;
+ * -- 0..1 Role roles;
+}
+
+class Role {
+ abstract;
+}
+
+class Scientist{
+  String role= "expert";
+    
+isA Role;
+}
+
+class LocalUser {
+  String role="local";
+ 
+ isA Role;
+}
+
+class Report{
+double canopy;
+int carbonSequestration;
+double bioDiversityIndex;
+Date date;
+* -- 0..* Tree treesForReport;
+
+}
+
+
+
+
+
+class Forecast {
+autounique fID;
+  0..*-- 1 Person person;
+1 -- 0..* Report report;
+* -> 0..* Tree treesToBePlanted;
+  * -> 0..* Tree treesToBeCut;
+ * -- 0..* Tree currentTrees;
+}
+}

@@ -1,0 +1,44 @@
+<TreePLE id="1">
+  <trees id="2">
+    <Tree id="3">
+      <height>12.0</height>
+      <diameter>23.0</diameter>
+      <longitude>34.0</longitude>
+      <latitude>34.0</latitude>
+      <treeID>51</treeID>
+      <statuses id="4"/>
+      <municipality id="5">
+        <municipalityName>Montreal</municipalityName>
+        <trees id="6">
+          <Tree reference="3"/>
+        </trees>
+      </municipality>
+      <reports id="7"/>
+      <forecasts id="8"/>
+    </Tree>
+    <Tree id="9">
+      <height>34.0</height>
+      <diameter>24.0</diameter>
+      <longitude>26.0</longitude>
+      <latitude>34.0</latitude>
+      <treeID>52</treeID>
+      <statuses id="10"/>
+      <municipality id="11">
+        <municipalityName>Laval</municipalityName>
+        <trees id="12">
+          <Tree reference="9"/>
+        </trees>
+      </municipality>
+      <reports id="13"/>
+      <forecasts id="14"/>
+    </Tree>
+  </trees>
+  <person id="15"/>
+  <reports id="16"/>
+  <municipality id="17">
+    <municipality reference="5"/>
+    <municipality reference="11"/>
+  </municipality>
+  <forecast id="18"/>
+  <statuses id="19"/>
+</TreePLE>

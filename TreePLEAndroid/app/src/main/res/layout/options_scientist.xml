@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/maps_scientist"
+
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp"
+        android:layout_marginStart="27dp"
+        android:background="@drawable/maps" />
+
+    <Button
+        android:id="@+id/button6"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:background="#30000000"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Choose One:"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/sc_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:background="#10000000"
+        android:text="Plant Tree" />
+
+    <Button
+        android:id="@+id/sc_cut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sc_plant"
+        android:layout_below="@+id/sc_plant"
+        android:layout_marginTop="32dp"
+        android:background="#10000000"
+        android:text="Cut Tree" />
+
+    <Button
+        android:id="@+id/sc_mark_cut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sc_cut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:background="#10000000"
+        android:text="To be Cut Down Tree" />
+
+    <Button
+        android:id="@+id/sc_diseased"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sc_mark_cut"
+        android:layout_alignTop="@+id/sc_mark_cut"
+        android:layout_marginTop="57dp"
+        android:background="#10000000"
+        android:text="Mark Diseased Tree" />
+
+    <Button
+        android:id="@+id/back_scientist"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_alignEnd="@+id/maps_scientist"
+        android:background="@drawable/back_ic" />
+
+</RelativeLayout>

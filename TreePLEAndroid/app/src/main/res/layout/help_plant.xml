@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/help">
+
+    <Button
+        android:id="@+id/help_height"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/help_diameter"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="74dp"
+        android:background="#10000000"
+        android:text="Tree Height"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/help_diameter"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/help_height"
+        android:layout_centerVertical="true"
+        android:background="#10000000"
+        android:text="Tree Diameter"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/help_species"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/help_diameter"
+        android:layout_below="@+id/help_diameter"
+        android:layout_marginTop="70dp"
+        android:background="#10000000"
+        android:text="Tree Species"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/b_plant"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="51dp"
+        android:layout_marginTop="33dp"
+        android:layout_toStartOf="@+id/help_diameter"
+        android:background="@drawable/back_ic" />
+</RelativeLayout>

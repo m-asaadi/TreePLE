@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over"
+    tools:context="ca.mcgill.ecse321.treeple.Options">>>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/glasses" />
+
+    <Button
+        android:id="@+id/button4"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="#30000000"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Choose One:"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/planttree_b"
+
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="26dp"
+        android:layout_toStartOf="@+id/button5"
+        android:background="#10000000"
+        android:text="Plant Tree" />
+
+
+    <Button
+        android:id="@+id/cuttree_b"
+
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignStart="@+id/planttree_b"
+        android:layout_below="@+id/planttree_b"
+        android:layout_marginTop="36dp"
+        android:background="#10000000"
+        android:text="Cut Tree" />
+
+
+    <Button
+        android:id="@+id/viewmaps_b"
+
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cuttree_b"
+        android:layout_below="@+id/cuttree_b"
+        android:layout_marginTop="35dp"
+        android:background="#10000000"
+        android:text="View Maps" />
+
+    <Button
+        android:id="@+id/back_ic"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button4"
+        android:background="@drawable/back_ic" />
+
+
+
+
+</RelativeLayout>

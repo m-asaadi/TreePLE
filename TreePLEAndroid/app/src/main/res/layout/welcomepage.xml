@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over"
+    android:orientation="vertical"
+
+    tools:context="ca.mcgill.ecse321.treeple.MainActivity">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ok_1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="Welcome to TreePLE!"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/username_entry"
+        android:layout_alignStart="@+id/username_entry"
+        android:layout_marginBottom="15dp"
+        android:text="Please Enter Your Name:"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/username_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/userType"
+        android:layout_alignStart="@+id/username_entry"
+        android:layout_marginBottom="18dp"
+        android:text="Please Select:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/userType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignTop="@+id/textView6"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/ok_1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userType"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="48dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="#30000000"
+        android:onClick="userLogin"
+        android:text="OK"
+        android:textColor="#fff" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/userType"
+        android:text="UserType"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/b_first"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/welcome"
+        android:background="@drawable/back_ic" />
+
+    <Button
+
+        android:id="@+id/drums"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/drums" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/drums"
+        android:visibility="invisible" />
+
+
+
+</RelativeLayout>

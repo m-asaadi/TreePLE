@@ -1,0 +1,82 @@
+<TreePLE id="1">
+  <trees id="2">
+    <Tree id="3">
+      <treeSpecies>Willow</treeSpecies>
+      <height>13.0</height>
+      <diameter>20.0</diameter>
+      <longitude>125.0</longitude>
+      <latitude>22.0</latitude>
+      <landType>Institutional</landType>
+      <treeID>1</treeID>
+      <statuses id="4">
+        <status id="5">
+          <treeState>Planted</treeState>
+          <date id="6">2018-04-12 23:40:59.794 UTC</date>
+          <tree reference="3"/>
+          <person id="7">
+            <name>Abed</name>
+            <treesPlanted>1</treesPlanted>
+            <treesCut>0</treesCut>
+            <level>LocalCitizen</level>
+            <status id="8">
+              <status reference="5"/>
+            </status>
+            <forecasts id="9"/>
+          </person>
+        </status>
+      </statuses>
+      <municipality id="10">
+        <municipalityName>Montreal</municipalityName>
+        <trees id="11">
+          <Tree reference="3"/>
+        </trees>
+      </municipality>
+      <currentStatus reference="5"/>
+      <reports id="12"/>
+      <forecasts id="13"/>
+    </Tree>
+  </trees>
+  <person id="14">
+    <person id="15">
+      <name>John</name>
+      <treesPlanted>0</treesPlanted>
+      <treesCut>0</treesCut>
+      <level>LocalCitizen</level>
+      <status id="16"/>
+      <roles class="scientist" id="17">
+        <persons id="18">
+          <person reference="15"/>
+        </persons>
+        <role>expert</role>
+      </roles>
+      <forecasts id="19"/>
+    </person>
+    <person id="20">
+      <name>Daniel</name>
+      <treesPlanted>0</treesPlanted>
+      <treesCut>0</treesCut>
+      <level>LocalCitizen</level>
+      <status id="21"/>
+      <roles class="scientist" id="22">
+        <persons id="23">
+          <person reference="20"/>
+        </persons>
+        <role>expert</role>
+      </roles>
+      <forecasts id="24"/>
+    </person>
+    <person reference="7"/>
+  </person>
+  <reports id="25"/>
+  <municipality id="26">
+    <municipality reference="10"/>
+    <municipality id="27">
+      <municipalityName>Laval</municipalityName>
+      <trees id="28"/>
+    </municipality>
+  </municipality>
+  <forecast id="29"/>
+  <statuses id="30">
+    <status reference="5"/>
+  </statuses>
+</TreePLE>

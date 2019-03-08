@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TreePLE</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="Location_button">Location</string>
+    <string name = "AddTree">Add Tree</string>
+    <string name = "ListTree">List Trees</string>
+
+
+    <string name="newMun_hint">Where?</string>
+    <string name="refresh_list">Refresh</string>
+
+    <string name="munspinner_label">Municipality</string>
+    <string name="height">Height</string>
+    <string name="diameter">Diameter</string>
+    <string name="species">Species</string>
+    <string name="landtype">Landtype</string>
+
+    <string name="longitude">Height</string>
+    <string name="latitude">Diameter</string>
+    <string name="username">Diameter</string>
+
+
+
+
+</resources>

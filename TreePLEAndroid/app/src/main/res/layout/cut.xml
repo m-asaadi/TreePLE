@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over">
+
+    <Button
+        android:id="@+id/title_cut"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="29dp"
+        android:background="#10000000"
+        android:text="Cut Tree"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/lgt_cut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/invalid_cut"
+        android:layout_below="@+id/invalid_cut"
+        android:ems="10"
+        android:hint="Longitude"
+        android:inputType="numberSigned|numberDecimal"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/ltd_cut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lgt_cut"
+        android:layout_below="@+id/lgt_cut"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="Latitude"
+        android:inputType="numberSigned|numberDecimal"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/ok_cut"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:layout_below="@+id/ltd_cut"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="47dp"
+        android:layout_toEndOf="@+id/ltd_cut"
+        android:background="#20000000"
+        android:onClick="cut"
+        android:text="Cut Tree" />
+
+    <TextView
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lgt_cut"
+        android:layout_below="@+id/title_cut"
+        android:layout_marginEnd="29dp"
+        android:text="Success!"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/invalid_cut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_cut"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/back_c"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/invalid_cut"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/title_cut"
+        android:background="@drawable/back_ic" />
+
+    <Button
+        android:id="@+id/bob_think"
+        android:layout_width="137dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_toEndOf="@+id/invalid_cut"
+        android:background="@drawable/think_bob" />
+
+
+</RelativeLayout>
